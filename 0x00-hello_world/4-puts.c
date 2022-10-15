@@ -1,8 +1,12 @@
 #include<stdio.h>
-/* using puts function */
+/**
+ * main - outputs main.c.
+ * Description: 'removes the printf and replaces with puts.'
+ * Return: Always success
+ */
 int main(void)
+
 {
-	/* still put function */
-	puts("Programming is like building a multilingual puzzle");
+	puts("programming is like building a multilingual puzzle\n");
 	return (0);
 }
