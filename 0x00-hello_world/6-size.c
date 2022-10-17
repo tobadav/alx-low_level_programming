@@ -1,7 +1,9 @@
 #include<stdio.h>
 /**
  * main - outputs to main.c
+ *
  * Description: 'prints various sizes of output on the screen'
+ *
  * Return: 0
  */
 int main(void)
