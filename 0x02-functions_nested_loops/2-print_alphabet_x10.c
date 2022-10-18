@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * print_alphabet_10x -> printsten times the alphabet
+ * print_alphabet_x10 -> prints lowercase alphabets
  */
-
 void print_alphabet_x10(void)
 {
 	int a;
