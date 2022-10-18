@@ -1,5 +1,6 @@
-#ifndef MAIN_H
-#define MAIN_H
-int _putchar(char c)
+/**
+ * main - starting
+ * Description: 'main.h header created'
+ */
+int _putchar(char c);
 
-#endif
