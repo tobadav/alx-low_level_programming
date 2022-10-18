@@ -4,23 +4,24 @@
  * Description: 'print in lower and uppercase'
  * Return: 0
  */
+
 int main(void)
 {
-	char i;
+	char a;
 
-	char q;
+	char b;
 
-	i = 'a';
-	q = 'A';
+	a = 'a';
+	b = 'A';
 	while
-		(i <= 'z') {
-			putchar(i);
-			i++;
+		(a <= 'z') {
+			putchar(a);
+			a++;
 		}
 	while
-		(q <= 'z') {
-			putchar(q);
-			q++;
+		(b <= 'Z') {
+			putchar(b);
+			b++;
 		}
 	putchar('\n');
 	return (0);
