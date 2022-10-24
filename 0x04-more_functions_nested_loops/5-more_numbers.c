@@ -1,21 +1,29 @@
 #include "main.h"
+
 /**
- * more_numbers - prints ten times the numbers
- * Retuen: success
+ * more_numbers - prints more numbers
+ * Return:void
  */
+
 void more_numbers(void)
 {
-	int a;
-	int b;
+	char n, c;
+	int a = 0;
 
-	for (a = 1; a <= 10; a++)
+	while (a < 10)
 	{
-		for (b = 0; b <= 14; b++)
-		{
-			if (b >= 10)
-			_putchar('1');
-			_putchar(j % 10 + '0');
-		}
-			_putchar('\n');
+	for (n = 0; n <= 14; n++)
+	{
+	c = n;
+	if (n > 9)
+	{
+	_putchar('1');
+
+	c = n % 10;
+	}
+	_putchar('0' + c);
+	}
+	_putchar('\n');
+	a++;
 	}
 }
