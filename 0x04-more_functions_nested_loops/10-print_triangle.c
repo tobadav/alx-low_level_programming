@@ -1,29 +1,32 @@
 #include "main.h"
+
 /**
- * print_triangle - prints triangle
- * Description: Prints diagonals
- * @size: triangle size
- * Return: success
+ * print_triangle - check for a digit
+ * @size : integer type
+ * Return: 0 (success)
  */
+
 void print_triangle(int size)
 {
-	if (size <= 0)
+	int a = 1, b;
+
+	while (a <= size && size > 0)
 	{
-		_putchar('\n');
-	}
-	else
+	b = 0;
+	while (b < size - a)
 	{
-		for (row = 1; row <= size; row++)
-		{
-			for (spaces = size - row; spaces >= 1; spaces--)
-			{
-				_putchar(' ');
-			}
-			for (hashes = 1; hashes <= row; hashes++)
-			{
-				_putchar('#');
-			}
-			_putchar('\n');
-		}
+	_putchar(' ');
+	b++;
 	}
+	b = 0;
+	while (b < a)
+	{
+	_putchar('#');
+	b++;
+	}
+	_putchar('\n');
+	a++;
+	}
+	if (a == 1)
+	_putchar('\n');
 }
