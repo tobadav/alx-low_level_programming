@@ -1,22 +1,27 @@
+#include <stdio.h>
 #include "main.h"
+#include <math.h>
 
 /**
- * get_bit - returns the value of a bit at a given index.
- * @n: checking bits
- * @index: which to check bit
- *
- * Return: the value of the bit at index
+ * print_binary - Function that prints the binary representation of a number.
+ * Prototype: void print_binary(unsigned long int n);
+ * @n: number to convert to binary
+ * You are not allowed to use arrays
+ * You are not allowed to use malloc
+ * You are not allowed to use the % or / operators
  */
-int get_bit(unsigned long int n, unsigned int index)
+void print_binary(unsigned long int n)
 {
-	unsigned long int div, res;
-
-	if (index > (sizeof(unsigned long int) * 8 - 1))
-		return (-1);
-	div = 1 << index;
-	res = n & div;
-	if (res == div)
-		return (1);
-
-	return (0);
+	if (n == 0)
+	{
+	putchar('0');
+	return;
+	}
+	else if (n == 1)
+	{
+	putchar ('1');
+	return;
+	}
+	print_binary(n >> 1);
+	putchar('0' + (n & 1));
 }
